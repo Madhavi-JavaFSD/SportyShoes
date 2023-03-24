@@ -67,11 +67,14 @@ public class CustomerController {
 					}
 					else
 					{
-						a.setCustName(request.getParameter("custName"));
-						a.setCustEmail(request.getParameter("custEmail"));
-						a.setCustPassword(request.getParameter("custPass"));
+						a.setCustName(sCustName);
+						a.setCustEmail(sCustEmail);
+						a.setCustPassword(sCustPass);
 						Customer ep = dao.addcust(a);
 						if (ep != null) {
+							HttpSession session=request.getSession();
+							session.setAttribute("sessionCustEmail",sCustEmail);
+							session.setAttribute("sessionCustPass",sCustPass);
 							mv.setViewName("CustHomePage.jsp");
 						}
 						else {

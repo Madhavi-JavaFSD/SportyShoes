@@ -40,7 +40,7 @@ th, td {
 		<% }
 		else
 		{%>
-			<h3>No Records Found.</h3>		
+			<h3>No Purchase orders in the specified date range.</h3>		
 		<%
 		}
 		%>

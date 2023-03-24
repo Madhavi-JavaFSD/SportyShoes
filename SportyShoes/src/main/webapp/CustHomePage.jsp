@@ -21,7 +21,7 @@ h1 {
  			<div style="background-color:#E3C1CA; width: 20%; height: 550px; float:left;">  
 				<ul>
 				<li><a href="CustSearchShoe.jsp" target="iframe_a">Search Shoe</a></li>		
-				<li><a href="/getAllShoeForCustomer" target="iframe_a">Display Shoes</a></li>			
+				<li><a href="/getAllShoeForCustomer" target="iframe_a">Display All Shoes</a></li>			
 				<li><a href="/customerLogout" target="_top">Logout</a></li>				
 				</ul>
         	</div>    
