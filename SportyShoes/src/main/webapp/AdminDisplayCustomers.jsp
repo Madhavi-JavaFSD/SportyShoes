@@ -15,14 +15,20 @@ th, td {
 </head>
 <body>
 <!-- Page to show Admin when she clicks on 'Show All Customers'-->
-<%List<Customer> e=(List<Customer>)request.getAttribute("list"); %>
-<%if(e != null && e.size() > 0)
-	{%>
+<%
+List<Customer> e=(List<Customer>)request.getAttribute("list");
+%>
+<%
+if(e != null && e.size() > 0)
+	{
+%>
 	
 		<h1><i>List of Customers</i></h1>
 		<table border="1">
 		<tr><th>Customer ID</th><th>Name</th><th>Email</th></tr>
-		<%for(Customer es:e){%>
+		<%
+		for(Customer es:e){
+		%>
 		<tr>
 		<td><%=es.getCustID() %></td>
 		<td><%=es.getCustName()%></td>
